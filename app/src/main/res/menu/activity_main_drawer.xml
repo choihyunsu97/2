@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+
+    <item
+        android:title="주요건물"
+        android:id="@+id/ee"
+        android:visible="true">
+
+        <menu
+            android:id="@+id/JyBd"
+            android:visible="true">
+            <item
+                android:id="@+id/Bd101"
+                android:title="@string/StBd101"/>
+            <item
+                android:id="@+id/Bd102"
+                android:title="@string/StBd102"/>
+            <item
+                android:id="@+id/Bd103"
+                android:title="@string/StBd103"/>
+            <item
+                android:id="@+id/Bd104"
+                android:title="@string/StBd104"/>
+            <item
+                android:id="@+id/Bd105"
+                android:title="@string/StBd105"/>
+            <item
+                android:id="@+id/Bd106"
+                android:title="@string/StBd106"/>
+            <item
+                android:id="@+id/Bd107"
+                android:title="@string/StBd107"/>
+            <item
+                android:id="@+id/Bd201"
+                android:title="@string/StBd201"/>
+            <item
+                android:id="@+id/Bd202"
+                android:title="@string/StBd202"/>
+            <item
+                android:id="@+id/Bd203"
+                android:title="@string/StBd203"/>
+            <item
+                android:id="@+id/Bd204"
+                android:title="@string/StBd204"/>
+            <item
+                android:id="@+id/Bd207"
+                android:title="@string/StBd207"/>
+            <item
+                android:id="@+id/Bd208"
+                android:title="@string/StBd208"/>
+            <item
+                android:id="@+id/Bd209"
+                android:title="@string/StBd209"/>
+            <item
+                android:id="@+id/Bd301"
+                android:title="@string/StBd301"/>
+            <item
+                android:id="@+id/Bd302"
+                android:title="@string/StBd302"/>
+            <item
+                android:id="@+id/Bd303"
+                android:title="@string/StBd303"/>
+            <item
+                android:id="@+id/Bd304"
+                android:title="@string/StBd304"/>
+            <item
+                android:id="@+id/Bd305"
+                android:title="@string/StBd305"/>
+            <item
+                android:id="@+id/Bd307"
+                android:title="@string/StBd307"/>
+            <item
+                android:id="@+id/Bd308"
+                android:title="@string/StBd308"/>
+            <item
+                android:id="@+id/Bd309"
+                android:title="@string/StBd309"/>
+            <item
+                android:id="@+id/Bd310"
+                android:title="@string/StBd310"/>
+
+
+        </menu>
+    </item>
+
+</menu>

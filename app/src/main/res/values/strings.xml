@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">카우맵(중앙대캠퍼스맵)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="StBd101">101관(영신관)</string>
+    <string name="StBd102">102관(약학대학 및 RnD센터)</string>
+    <string name="StBd103">103관(파이퍼홀)</string>
+    <string name="StBd104">104관(수림과학관)</string>
+    <string name="StBd105">105관(제1의학관)</string>
+    <string name="StBd106">106관(제2의학관)</string>
+    <string name="StBd107">107관(학생회관)</string>
+    <string name="StBd201">201관(본관)</string>
+    <string name="StBd202">202관(전산정보관)</string>
+    <string name="StBd203">203관(서라벌홀)</string>
+    <string name="StBd204">204관(중앙도서관)</string>
+    <string name="StBd207">207관(봅스트홀)</string>
+    <string name="StBd208">208관(제2공학관)</string>
+    <string name="StBd209">209관(창업보육관)</string>
+    <string name="StBd301">301관(중앙문화예술관)</string>
+    <string name="StBd302">302관(대학원)</string>
+    <string name="StBd303">303관(법학관)</string>
+    <string name="StBd304">304관(미디어공연영상관)</string>
+    <string name="StBd305">305관(교수연구동 및 체육관)</string>
+    <string name="StBd307">307관(글로벌 하우스)</string>
+    <string name="StBd308">308관(블루미르홀308관)</string>
+    <string name="StBd309">309관(블루미르홀309관)</string>
+    <string name="StBd310">310관(100주년기념관)</string>
+    <string name="Stfloor15">15F</string>
+    <string name="Stfloor14">14F</string>
+    <string name="Stfloor13">13F</string>
+    <string name="Stfloor12">12F</string>
+    <string name="Stfloor11">11F</string>
+    <string name="Stfloor10">10F</string>
+    <string name="Stfloor9">9F</string>
+    <string name="Stfloor8">8F</string>
+    <string name="Stfloor7">7F</string>
+    <string name="Stfloor6">6F</string>
+    <string name="Stfloor5">5F</string>
+    <string name="Stfloor4">4F</string>
+    <string name="Stfloor3">3F</string>
+    <string name="Stfloor2">2F</string>
+    <string name="Stfloor1">1F</string>
+    <string name="StfloorB1">B1F</string>
+    <string name="StfloorB2">B2F</string>
+    <string name="StfloorB3">B3F</string>
+    <string name="StfloorB4">B4F</string>
+    <string name="StfloorB5">B5F</string>
+    <string name="StfloorB6">B6F</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
