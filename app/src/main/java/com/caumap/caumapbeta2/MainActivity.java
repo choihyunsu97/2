@@ -17,6 +17,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 
@@ -39,6 +40,7 @@ import androidx.fragment.app.FragmentManager;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -53,8 +55,6 @@ public class MainActivity extends AppCompatActivity
     float a =10.0f; float b = 10.0f;
     WifiManager wifiManager;
     private List<ScanResult> scanResults;
-
-
 
 
     @Override
@@ -72,7 +72,26 @@ public class MainActivity extends AppCompatActivity
        // if(!wifi.isWifiEnabled()){
       //      wifi.setWifiEnabled(true);
      //   }
+        //
 
+
+
+        //!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        /*
+        //first, onclick 리스너 쓰고 onclick 메소드 오버라이드 함....
+        //create instance of databasAccess class and open database  connection
+
+       DatabaseAccess databaseAccess = DatabaseAccess.getInstance(getApplicationContext());
+       databaseAccess.open();
+
+        // getting Location from BSSID
+
+        //String n = BSSID
+        //String location = databaseAccess.getLocation(n);
+        // adress 값으로 location 값 구함.
+        databaseAccess.close();
+
+*/
 
 
 
