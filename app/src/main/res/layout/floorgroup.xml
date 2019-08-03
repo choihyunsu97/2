@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment000">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/backkey"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button4"
+                android:layout_gravity="bottom"
+                android:text="B"
+                android:textSize="20sp" android:fontFamily="sans-serif-thin"
+                android:layout_marginRight="15dp" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:background="@drawable/floor3"
+
+                android:layout_height="320dp"
+                >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/floor15"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor15"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor14"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor14"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+                        <RadioButton
+                            android:id="@+id/floor13"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor13"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor12"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor12"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor11"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor11"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor10"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor10"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor9"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor9"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor8"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor7"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor6"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor5"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor4"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor3"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor2"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floor1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/Stfloor1"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB1"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB2"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB3"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB4"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB5"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/floorB6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/floorbackground"
+                            android:button="@drawable/blank"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="@string/StfloorB6"
+                            android:textSize="20sp" android:fontFamily="sans-serif-light"
+                            android:visibility="visible" />
+
+
+
+
+                    </RadioGroup>
+
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

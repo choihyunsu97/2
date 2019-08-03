@@ -49,7 +49,7 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
     public static float MIN_SCALE_RATIO = 0.1F;
 
     float oldDistance = 0.0F;
-
+    int oldoldPointerCount=0;
     int oldPointerCount = 0;
     boolean isScrolling = false;
     float distanceThreshold = 3.0F;
@@ -89,7 +89,7 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
     }
 
     public void newImage(int width, int height) {
-        Bitmap img = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Bitmap img = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
         Canvas canvas = new Canvas();
         canvas.setBitmap(img);
 
@@ -105,7 +105,7 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
 
     public void drawBackground(Canvas canvas) {
         if (canvas != null) {
-            canvas.drawColor(Color.BLACK);
+            canvas.drawColor(Color.WHITE);
         }
     }
 
@@ -128,6 +128,8 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
 
         scaleRatio = 1.0F;
         totalScaleRatio = 1.0F;
+
+
     }
 
     public void recycle() {
@@ -159,7 +161,7 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
         final int action = ev.getAction();
 
         int pointerCount = ev.getPointerCount();
-        Log.d(TAG, "Pointer Count : " + pointerCount);
+        Log.d(TAG, "Pointer Count : " + pointerCount + oldPointerCount+oldoldPointerCount);
 
         switch (action) {
             case MotionEvent.ACTION_DOWN:
@@ -202,14 +204,19 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
                     if (oldPointerCount == 2) {
 
                     } else {
+                        if(oldoldPointerCount==2&&oldPointerCount==1){
+                            startX = curX;
+                            startY = curY;
+                        }
+                        else{
                         Log.d(TAG, "ACTION_MOVE : " + offsetX + ", " + offsetY);
 
-                        if (totalScaleRatio > 1.0F) {
+                        //if (totalScaleRatio > 1.0F) {
                             moveImage(-offsetX, -offsetY);
-                        }
+                        //}
 
                         startX = curX;
-                        startY = curY;
+                        startY = curY;}
                     }
 
                 } else if (pointerCount == 2) {
@@ -253,7 +260,7 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
 
                     oldDistance = distance;
                 }
-
+                oldoldPointerCount= oldPointerCount;
                 oldPointerCount = pointerCount;
 
                 break;
@@ -261,17 +268,17 @@ public class ImageDisplayView extends View implements View.OnTouchListener {
             case MotionEvent.ACTION_UP:
 
                 if (pointerCount == 1) {
-
+/*
                     float curX = ev.getX();
                     float curY = ev.getY();
 
                     float offsetX = startX - curX;
                     float offsetY = startY - curY;
-
+*/
                     if (oldPointerCount == 2) {
 
                     } else {
-                        moveImage(-offsetX, -offsetY);
+                       // moveImage(-offsetX, -offsetY);
                     }
 
                 } else {
