@@ -33,8 +33,8 @@ public class DatabaseAccess {
         }
     }
     //query and return database
-    public String getLocation(String name){
-    c = db.rawQuery("select Location from TABLE1 where BSSID = '" + name + "'", new String[]{});
+    public String getLocation(String BSSID){
+    c = db.rawQuery("select LocationX, LocationY from TABLE1 where BSSID = '" + BSSID + "'", new String[]{});
     StringBuffer buffer = new StringBuffer();
     while (c.moveToNext()){
         String location = c.getString(0);

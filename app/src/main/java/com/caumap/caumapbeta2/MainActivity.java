@@ -110,6 +110,10 @@ public class MainActivity extends AppCompatActivity
 
 */
 
+
+
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("psd");
@@ -316,6 +320,7 @@ public void setimage(int id,ImageDisplayView view){
 
     private void scanSuccess() {
         List<ScanResult> results = wifiManager.getScanResults();
+
     }
 
     private void scanFailure() {
