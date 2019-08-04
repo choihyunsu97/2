@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Fragment000">
 
-
+    <ImageButton
+        android:id="@+id/gps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_margin="30dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_my_location_black_24dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +21,7 @@
         android:orientation="vertical"
         android:layout_gravity="bottom"
         >
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -284,5 +292,11 @@
         </LinearLayout>
     </LinearLayout>
 
-
+<ImageView
+    android:id="@+id/gpspoint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:visibility="visible"
+    android:src="@drawable/ic_lens_black_24dp"/>
 </FrameLayout>

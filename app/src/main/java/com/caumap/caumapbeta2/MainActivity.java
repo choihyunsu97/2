@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity
         wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         String[] permissions = {
                 Manifest.permission.ACCESS_FINE_LOCATION
+
         };
         int permissionfineloca = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION);
         if (permissionfineloca == PackageManager.PERMISSION_DENIED){checkPermissions(permissions);
