@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.LocationManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
@@ -18,6 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.provider.ContactsContract;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 
@@ -55,16 +57,23 @@ public class MainActivity extends AppCompatActivity
     float a =10.0f; float b = 10.0f;
     WifiManager wifiManager;
     private List<ScanResult> scanResults;
+    LocationManager locationManager;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        locationManager  = (LocationManager)getSystemService(LOCATION_SERVICE);
         wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         String[] permissions = {
-                Manifest.permission.ACCESS_FINE_LOCATION
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.INTERNET,
+                Manifest.permission.ACCESS_COARSE_LOCATION
         };
+
         int permissionfineloca = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION);
         if (permissionfineloca == PackageManager.PERMISSION_DENIED){checkPermissions(permissions);
         }else{}
@@ -73,6 +82,14 @@ public class MainActivity extends AppCompatActivity
       //      wifi.setWifiEnabled(true);
      //   }
         //
+        if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            //GPS 설정화면으로 이동
+            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+            intent.addCategory(Intent.CATEGORY_DEFAULT);
+            startActivity(intent);
+        }
+
+
 
 
 
@@ -92,10 +109,6 @@ public class MainActivity extends AppCompatActivity
         databaseAccess.close();
 
 */
-
-
-
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
@@ -159,10 +172,6 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         }) ;
-
-
-
-
 
     }
 
@@ -307,7 +316,6 @@ public void setimage(int id,ImageDisplayView view){
 
     private void scanSuccess() {
         List<ScanResult> results = wifiManager.getScanResults();
-
     }
 
     private void scanFailure() {
